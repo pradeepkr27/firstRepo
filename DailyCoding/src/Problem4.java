@@ -33,14 +33,14 @@ public class Problem4
 		Arrays.sort(arr);
 		System.out.println("sorted array: " + (Arrays.toString(arr)));
 		
-		outer: for(i=0; i<n; i++)
+		for(i=0; i<n; i++)
 		{
 			k = arr[i];
 			l = arr[i+1];	
 				while (k != l-1)
 					{
 						System.out.println(l-1);
-						break outer;
+						return;
 					}
 		}
 	}
